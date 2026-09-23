@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conditioning-switching"
+version = "0.1.0"
+description = "Minimal image generation with editing and text-to-image conditioning schedules"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "accelerate>=1.2,<2",
+    "Pillow>=10",
+    "numpy>=1.24",
+    "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+flux = ["diffusers==0.37.0", "transformers==5.3.0"]
+bagel = ["torch>=2.5.1", "transformers==4.49.0", "einops>=0.8", "torchvision>=0.20", "opencv-python-headless>=4.10", "sentencepiece>=0.2"]
+notebook = ["jupyterlab>=4", "matplotlib>=3.8"]
+test = ["pytest>=8", "nbformat>=5"]
+
+[project.scripts]
+switching-demo = "switching.demo:main"
+
+[tool.setuptools.packages.find]
+include = ["switching*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "licenses/Apache-2.0.txt", "THIRD_PARTY_NOTICES.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
