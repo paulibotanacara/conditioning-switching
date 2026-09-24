@@ -20,7 +20,7 @@ language governing permissions and limitations under the License.
 Model checkpoints and dependencies retain their respective licenses and are not
 bundled. New code is licensed under Apache-2.0; see [LICENSE](LICENSE).
 
-The 4B and BAGEL notebooks use `examples/assets/imgedit_fox.png`, the
+The 4B notebook uses `examples/assets/imgedit_fox.png`, the
 ImgEdit blue-bird-to-red-fox example saved with the paper. It is third-party
 benchmark content, not covered by the new code's license. Reference: Yang Ye et
 al., *ImgEdit: A Unified Image Editing Dataset and Benchmark* (2025),
@@ -39,9 +39,10 @@ Context preparation and flow sampling in `switching/bagel.py` are adapted from
 Copyright 2025 Bytedance Ltd. and/or its affiliates. Licensed under Apache-2.0
 (see the copy above). BAGEL checkpoints retain their publisher’s license.
 
-The 9B notebook uses GEdit-Bench sample `750` in
-`examples/assets/gedit_750.png` and its editing instruction. The target caption
-and improved editing instruction accompany this demonstration.
+The 9B and BAGEL notebooks use GEdit-Bench samples `750` and `535` in
+`examples/assets/gedit_750.png` and `examples/assets/gedit_535.png`, respectively,
+and their editing instructions. Target captions and improved editing instructions
+accompany these demonstrations.
 Source: [stepfun-ai/GEdit-Bench](https://huggingface.co/datasets/stepfun-ai/GEdit-Bench),
 whose dataset card lists the MIT license. This third-party asset retains its
 original ownership and license.
