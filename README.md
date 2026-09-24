@@ -15,6 +15,8 @@ jupyter lab
 | FLUX.2 Klein base 9B | [9B](examples/switching_9b.ipynb) |
 | BAGEL | [BAGEL](examples/switching_bagel.ipynb) |
 
+[Prompting with Qwen](examples/prompting.ipynb) generates a target caption and an improved editing instruction, then illustrates both with FLUX.2 Klein 4B.
+
 The notebooks include generated examples, conditioning modes, and selective switching.
 The 4B notebook also compares image and multimodal guidance.
 
