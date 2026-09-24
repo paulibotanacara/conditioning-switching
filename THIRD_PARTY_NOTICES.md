@@ -20,7 +20,7 @@ language governing permissions and limitations under the License.
 Model checkpoints and dependencies retain their respective licenses and are not
 bundled. New code is licensed under Apache-2.0; see [LICENSE](LICENSE).
 
-The notebook's default source image, `examples/assets/imgedit_fox.png`, is the
+The 4B and BAGEL notebooks use `examples/assets/imgedit_fox.png`, the
 ImgEdit blue-bird-to-red-fox example saved with the paper. It is third-party
 benchmark content, not covered by the new code's license. Reference: Yang Ye et
 al., *ImgEdit: A Unified Image Editing Dataset and Benchmark* (2025),
@@ -38,3 +38,30 @@ Context preparation and flow sampling in `switching/bagel.py` are adapted from
 `a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f`.
 Copyright 2025 Bytedance Ltd. and/or its affiliates. Licensed under Apache-2.0
 (see the copy above). BAGEL checkpoints retain their publisher’s license.
+
+The 9B notebook uses GEdit-Bench sample `750` in
+`examples/assets/gedit_750.png` and its editing instruction. The target caption
+and improved editing instruction accompany this demonstration.
+Source: [stepfun-ai/GEdit-Bench](https://huggingface.co/datasets/stepfun-ai/GEdit-Bench),
+whose dataset card lists the MIT license. This third-party asset retains its
+original ownership and license.
+
+MIT License (GEdit-Bench asset):
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
